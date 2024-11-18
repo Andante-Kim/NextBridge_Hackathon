@@ -2,23 +2,26 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
+
 from ..forms import QuestionForm
-from ..models import Question
+from ..models import Question, Category
 
 # 질문 등록(질문 저장)
 @login_required(login_url='common:login')
-def question_create(request):
+def question_create(request, category_name):
+    category = Category.objects.get(name=category_name)
     if request.method == 'POST':
         form = QuestionForm(request.POST)
         if form.is_valid():                         # 폼이 유효하다면
             question = form.save(commit=False)      # 임시 저장하여 question 객체를 리턴 받는다.
             question.author = request.user          # author 속성에 로그인 계정 저장
-            question.create_date = timezone.now()   # 실제 저장을 위해 작성일시를 설정한다ㅏ.
+            question.create_date = timezone.now()   # 실제 저장을 위해 작성일시를 설정한다.
+            question.category = category
             question.save()                         # 데이터를 실제로 저장한다.
-            return redirect('home:index')
-    else:
+            return redirect(category)
+    else:   # request.method == 'GET'
         form = QuestionForm()
-    context = {'form': form}
+    context = {'form': form, 'category': category}
     return render(request, 'home/question_form.html', context)
 
 # 질문 수정
@@ -37,7 +40,7 @@ def question_modify(request, question_id):
             return redirect('home:detail', question_id=question.id)
     else:
         form = QuestionForm(instance=question)
-    context = {'form': form}
+    context = {'form': form, 'category': question.category}
     return render(request, 'home/question_form.html', context)
 
 # 질문 삭제
@@ -48,8 +51,9 @@ def question_delete(request, question_id):
         messages.error(request, '삭제권한이 없습니다')
         return redirect('home:detail', question_id=question.id)
     question.delete()
-    return redirect('home:index')
+    return redirect(question.category)
 
+'''
 # 질문 추천
 @login_required(login_url='common:login')
 def question_vote(request, question_id):
@@ -59,3 +63,4 @@ def question_vote(request, question_id):
     else:
         question.voter.add(request.user)
     return redirect('home:detail', question_id=question.id)
+'''

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4 class="border-bottom pb-2 my-3">{{ profile_user.username }}의 프로필 수정</h4>
+<form method="post">
+    {% csrf_token %}
+
+    <!-- 국가 필드 -->
+    <div class="mb-3">
+        <label for="id_country">출신 국가</label>
+        <select name="country" class="form-control" id="id_country">
+            {% for country in form.country.field.choices %}
+                <option value="{{ country.0 }}" {% if form.country.value == country.0 %}selected{% endif %}>
+                    {{ country.1 }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <!-- 주소 필드 -->
+    <div class="mb-3">
+        <label for="id_address">주소</label>
+        <input type="text" name="address" class="form-control" id="id_address"
+               value="{{ form.address.value }}">
+    </div>
+
+    <!-- 생년월일 필드 -->
+    <div class="mb-3">
+        <label for="id_birth_date">생년월일</label>
+        <input type="date" name="birth_date" class="form-control" id="id_birth_date"
+               value="{{ form.birth_date.value|date:'Y-m-d' }}">
+    </div>
+
+    <!-- 기타 필드 (이메일 등) -->
+
+    <button type="submit" class="btn btn-primary">수정하기</button>
+</form>
+{% endblock %}

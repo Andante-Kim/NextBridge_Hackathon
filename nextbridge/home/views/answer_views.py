@@ -1,7 +1,10 @@
+from urllib.parse import urlparse, parse_qs
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect, resolve_url
 from django.utils import timezone
+
 from ..forms import AnswerForm
 from ..models import Question, Answer
 
@@ -17,7 +20,12 @@ def answer_create(request, question_id):
             answer.create_date = timezone.now()
             answer.question = question
             answer.save()
-            return redirect('{}#answer_{}'.format(resolve_url('home:detail', question_id=question.id), answer.id))
+
+            _path = request.get_full_path()
+            _query_dict = parse_qs(urlparse(_path).query)
+            so = _query_dict['so'][0]
+            page = answer.get_page(so)
+            return redirect(resolve_url(question)+f'?page={page}&so={so}#answer_{answer.id}')
     else:
         form = AnswerForm()
     context = {'question': question, 'form': form}
@@ -36,8 +44,8 @@ def answer_modify(request, answer_id):
             answer = form.save(commit=False)
             answer.modify_date = timezone.now()
             answer.save()
-            return redirect('{}#answer_{}'.format(
-                resolve_url('home:detail', question_id=answer.question.id), answer.id))
+            path = request.get_full_path()
+            return redirect(resolve_url(answer.question)+f'?{urlparse(path).query}#answer_{answer.id}')
     else:
         form = AnswerForm(instance=answer)
     context = {'answer': answer, 'form': form}
@@ -52,6 +60,7 @@ def answer_delete(request, answer_id):
     else:
         answer.delete()
     return redirect('home:detail', question_id=answer.question.id)
+
 
 # 답변 추천
 @login_required(login_url='common:login')

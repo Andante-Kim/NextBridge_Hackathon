@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <h4 class="border-bottom pb-2 my-3 text-center">{{ profile_user.username }}님의 프로필</h4>
+    {% include "common/profile/profile_tabs.html" %}
+
+    <div id="profile_base">
+
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h5 class="mb-0">프로필 정보</h5>
+            </div>
+            <div class="card-body">
+                <!-- 이메일 -->
+                <div class="mb-3">
+                    <h5 class="card-title">이메일</h5>
+                    <p class="card-text">{{ profile_user.email }}</p>
+                </div>
+
+                <!-- 출신 국가 -->
+                <div class="mb-3">
+                    <h5 class="card-title">출신 국가</h5>
+                    <p class="card-text">
+                        <span class="fi fi-gr fis-{{ user_profile.country.code|lower }}"></span>
+                        {{ user_profile.country.name }}
+                    </p>
+                </div>
+
+                <!-- 현재 거주지 -->
+                <div class="mb-3">
+                    <h5 class="card-title">현재 거주지</h5>
+                    <p class="card-text">{{ user_profile.address }}</p>
+                </div>
+
+                <!-- 생년월일 (나이 자동 계산) -->
+                <div class="mb-3">
+                    <h5 class="card-title">생년월일</h5>
+                    <p class="card-text">{{ user_profile.birth_date }}</p>
+                </div>
+            </div>
+            {% if user == profile_user %}
+            <div class="card-footer text-center">
+                <a href="{% url 'common:profile_edit' user_id=profile_user.id %}" class="btn btn-warning">프로필 수정</a>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
