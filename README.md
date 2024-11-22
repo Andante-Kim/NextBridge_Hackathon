@@ -11,23 +11,18 @@
 - 외국인 정착을 위한 connection 플랫폼 제공
 - 채용공고 제공
 - 기업 리뷰 제공
-
-**주요 기능**  
  
 
 ---
 
 ## 🚀 사용 기술 스택
 
-- **Frontend:** 
-- **Backend:**  
-- **Database:** SQLite
+- **Frontend:** HTML, CSS, Javascript (+bootstrap)
+- **Backend:** Python django (+Kakaomap Maps api)
+- **Database:** SQLite (+Selenium, BeautifulSoup)
 - **Design:** Figma  
 - **Version Control:** GitHub  
 
 ---
 
-## 🛠️ 설치 및 실행 방법
-
-### 1. 레포지토리 클론
 
