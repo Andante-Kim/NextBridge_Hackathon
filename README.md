@@ -30,13 +30,13 @@
 ## 🖼️ 스크린샷
 
 ### 홈 페이지
-![홈 페이지/커뮤니티 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/home/home_question_list.png)
+![홈 페이지/커뮤니티 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/home/home_question_list.PNG)
 
 ### 구인구직 페이지
-![구인구직 페이지 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/jobs/jobs_job_list.png)
+![구인구직 페이지 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/jobs/jobs_job_list.PNG)
 
 ### 커뮤니티 게시판
-![후기 공유 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/reviews/reviews_review_main(1).png)
+![후기 공유 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/reviews/reviews_review_main(1).PNG)
 
 
 ## 🛠️ 기술 스택
