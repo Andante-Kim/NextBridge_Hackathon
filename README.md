@@ -27,6 +27,18 @@
 - **💼 경제적 효과**: 지방 인력 문제 해결 및 지역 경제 강화.
 - **📊 정책적 활용성**: 정부 및 지방 자치 단체와 협력 가능성 증대.
 
+## 🖼️ 스크린샷
+
+### 홈 페이지
+![홈 페이지/커뮤니티 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/home/home_question_list.png)
+
+### 구인구직 페이지
+![구인구직 페이지 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/jobs/jobs_job_list.png)
+
+### 커뮤니티 게시판
+![후기 공유 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/reviews/reviews_review_main(1).png)
+
+
 ## 🛠️ 기술 스택
 - **Frontend**: HTML, CSS, JavaScript (+Bootstrap)
 - **Backend**: Python Django (+Kakao Maps API)
