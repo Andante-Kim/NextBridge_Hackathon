@@ -29,15 +29,15 @@
 
 ## 🖼️ 스크린샷
 
-### 홈 페이지
-![홈 페이지/커뮤니티 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/home/home_question_list.PNG)
+### 홈 페이지/ 커뮤니티 게시판
+<img src="https://github.com/user-attachments/assets/8428678e-f34e-4808-9ebb-84863cc0a39b"  width="80%" height="80%">
 
 ### 구인구직 페이지
-![구인구직 페이지 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/jobs/jobs_job_list.PNG)
+<img src="https://github.com/user-attachments/assets/c8ebdfd6-c6f2-4c6e-99f5-722d3a305381"  width="80%" height="80%">
 
 ### 커뮤니티 게시판
-![후기 공유 게시판 스크린샷](https://github.com/Andante-Kim/NextBridge_Hackathon/templates/images/reviews/reviews_review_main(1).PNG)
-
+<img src="https://github.com/user-attachments/assets/2bd928a4-c1b4-4368-bfc2-dc8834e4c15e" width="80%" height="80%">
+<img src="https://github.com/user-attachments/assets/3bd03019-82de-4b4b-a7ae-d64adfbbd7d0" width="80%" height="80%">
 
 ## 🛠️ 기술 스택
 - **Frontend**: HTML, CSS, JavaScript (+Bootstrap)
