@@ -1,11 +1,11 @@
-# 🌉 Next Bridge
+# Next Bridge
 
 지방 소멸 문제를 해결하기 위해, 외국인 노동자의 안정적인 정착을 돕는 구인구직 및 커뮤니티 플랫폼입니다.
 
-## 📝 소개
+## 소개
 한국의 지방 소멸 문제는 인구 유출과 낮은 경제적 기회에서 비롯됩니다. 저희 팀은 지방의 주요 노동력인 외국인 노동자들이 한국 사회에 더 안정적으로 정착할 수 있도록 돕기 위해 Next Bridge를 개발했습니다.
 
-## ✨ 주요 기능
+## 주요 기능
 1. **🔑 로그인 및 회원가입**
    - 사용자 친화적인 계정 생성 및 로그인 기능.
 
@@ -22,12 +22,12 @@
    - 기업 및 직장 환경에 대한 후기 작성 및 공유.
    - 투명성을 높이고 더 나은 선택을 돕는 시스템.
 
-## 🌟 기대 효과
-- **🌍 사회적 효과**: 지방 활성화 및 외국인 노동자의 안정적인 정착 지원.
-- **💼 경제적 효과**: 지방 인력 문제 해결 및 지역 경제 강화.
-- **📊 정책적 활용성**: 정부 및 지방 자치 단체와 협력 가능성 증대.
+## 기대 효과
+- ** 사회적 효과**: 지방 활성화 및 외국인 노동자의 안정적인 정착 지원.
+- ** 경제적 효과**: 지방 인력 문제 해결 및 지역 경제 강화.
+- ** 정책적 활용성**: 정부 및 지방 자치 단체와 협력 가능성 증대.
 
-## 🖼️ 스크린샷
+## 스크린샷
 
 ### 홈 페이지/ 커뮤니티 게시판
 <img src="https://github.com/user-attachments/assets/8428678e-f34e-4808-9ebb-84863cc0a39b"  width="80%" height="80%">
@@ -39,19 +39,19 @@
 <img src="https://github.com/user-attachments/assets/2bd928a4-c1b4-4368-bfc2-dc8834e4c15e" width="80%" height="80%">
 <img src="https://github.com/user-attachments/assets/3bd03019-82de-4b4b-a7ae-d64adfbbd7d0" width="80%" height="80%">
 
-## 🛠️ 기술 스택
+## 기술 스택
 - **Frontend**: HTML, CSS, JavaScript (+Bootstrap)
 - **Backend**: Python Django (+Kakao Maps API)
 - **Database**: SQLite (+Selenium, BeautifulSoup)
 - **Design**: Figma
 - **Version Control**: GitHub
 
-## 👩‍💻 팀 소개
+## 팀 소개
 - **팀명**: Next Bridge
 - **성과**: 덕성여자대학교 디지털소프트웨어학과 해커톤 2등 수상
 - **역할 분담**: 기획, 디자인, 프론트엔드 및 백엔드 개발
 
-## ⚙️ 설치 방법
+## 설치 방법
 다음 단계를 따라 로컬 환경에 이 프로젝트를 설치하세요:
 
 1. **저장소 클론**:
@@ -88,7 +88,7 @@
 
 7. 브라우저에서 `http://127.0.0.1:8000`을 열어 웹사이트를 확인합니다.
 
-## 🤝 기여 방법
+## 기여 방법
 1. 저장소를 **포크**합니다.
 2. 새로운 **브랜치**를 생성합니다. (`git checkout -b feature/AmazingFeature`)
 3. 변경 사항을 **커밋**합니다. (`git commit -m 'feat: AmazingFeature 추가'`)
@@ -98,19 +98,19 @@
 
 ---
 
-## 📜 라이선스
+## 라이선스
 이 프로젝트는 [MIT 라이선스](./LICENSE)를 따릅니다.
 
 ---
 
-# 🌉 Next Bridge
+# Next Bridge
 
 A recruitment and community platform to support the stable settlement of foreign workers and address the issue of regional depopulation in South Korea.
 
-## 📝 Introduction
+## Introduction
 The regional depopulation problem in South Korea stems from population outflows and limited economic opportunities. Our team developed Next Bridge to assist foreign workers, a key labor force in regional areas, in settling more stably in South Korean society.
 
-## ✨ Key Features
+## Key Features
 1. **🔑 Login and Registration**
    - User-friendly account creation and login functionality.
 
@@ -127,24 +127,24 @@ The regional depopulation problem in South Korea stems from population outflows 
    - Allows users to leave and share reviews about companies and work environments.
    - Enhances transparency and supports better decision-making.
 
-## 🌟 Expected Impact
-- **🌍 Social Impact**: Promotes regional revitalization and supports the stable settlement of foreign workers.
-- **💼 Economic Impact**: Addresses manpower shortages in rural areas and strengthens the local economy.
-- **📊 Policy Application**: Increases collaboration potential with government and local authorities.
+## Expected Impact
+- ** Social Impact**: Promotes regional revitalization and supports the stable settlement of foreign workers.
+- ** Economic Impact**: Addresses manpower shortages in rural areas and strengthens the local economy.
+- ** Policy Application**: Increases collaboration potential with government and local authorities.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript (+Bootstrap)
 - **Backend**: Python Django (+Kakao Maps API)
 - **Database**: SQLite (+Selenium, BeautifulSoup)
 - **Design**: Figma
 - **Version Control**: GitHub
 
-## 👩‍💻 Team Introduction
+## Team Introduction
 - **Team Name**: Next Bridge
 - **Achievement**: 2nd place at the Hackathon hosted by Duksung Women’s University Department of Digital Software.
 - **Roles**: Planning, design, frontend, and backend development.
 
-## ⚙️ Installation
+## Installation
 Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
@@ -181,7 +181,7 @@ Follow these steps to set up the project locally:
 
 7. Open `http://127.0.0.1:8000` in your browser to view the website.
 
-## 🤝 How to Contribute
+## How to Contribute
 1. **Fork** the repository.
 2. Create a new **branch**. (`git checkout -b feature/AmazingFeature`)
 3. **Commit** your changes. (`git commit -m 'feat: Add AmazingFeature'`)
